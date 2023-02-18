@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o PES2UG20CS506-1 hello.cpp'
+                sh 'g++ -o PES2UG20CS491-1 hello.cpp'
                 echo "Build Successful"
             }
         }
         stage('Test') {
             steps {
-                sh './PES2UG20CS506-1'
+                sh './PES2UG20CS491-1'
             }
         }
         stage('Deploy') {
             steps {
                 // deployment code
-//                 sh 'cp PES2UG20CS506-1 ../'
+//                 sh 'cp PES2UG20CS491-1 ../'
                 echo 'deployment successful'
             }
         }
